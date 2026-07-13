@@ -18,21 +18,22 @@ const projectsData = {
         ],
         github: 'https://github.com/Umar1hamzah/MobileComputing_Uas' // Placeholder/Link
     },
-    'wad-tasks': {
-        title: 'WAD Task Manager',
+    'goalpost': {
+        title: 'GOALPOST',
         tag: 'UAS Web Advance Development 2',
-        category: 'Full-Stack Web (Real-Time)',
-        stack: ['React (Vite)', 'Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'MySQL', 'Socket.IO', 'Axios Interceptors', 'TailwindCSS'],
-        desc: 'A full-stack collaborative task and project management web application. It supports live real-time boards synchronizations, token auto-refresh handling, and advanced tasks filtering.',
-        problem: 'Project coordination tools often lack real-time synchronization out of the box, requiring manual refreshing, or they suffer from security vulnerabilities like session hijacks and broken token expirations.',
-        solution: 'I developed a React SPA with Express/Node.js backend. I integrated Socket.IO to enable bidirectional, real-time channels—broadcasting tasks changes, live user online flags on the navbar, and comment board updates instantly. For security, I implemented JWT auth with Axios Interceptors featuring a 401 response interceptor retry queue (which queues requests while auto-refreshing the token via cookies before retrying).',
+        category: 'Full-Stack Web (Community)',
+        stack: ['React (Vite)', 'Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'JWT Authentication', 'CSS'],
+        desc: 'A full-stack community-driven football portal and news hub. It supports article creation, multi-image uploads, interactive commenting, liking, bookmarking, and tournament match tracking.',
+        problem: 'Football communities need a consolidated, fast hub to publish news and discuss matches. Standard platforms often suffer from slow queries, lack role-based moderation, and have complex tournament management dashboards.',
+        solution: 'I built GOALPOST using React on the frontend and Express/Node.js on the backend. I designed a relational schema in Prisma ORM with cascade deletions and composite primary keys for user interactions (likes & bookmarks). I implemented multi-role access control (Admin / User) with JWT authentication and secure password hashing. It includes a tournament match tracking simulator to record match status, phase groups, scores, and disciplinary statistics (cards).',
         achievements: [
-            'Built comprehensive data models for Users, Tasks, Categories, RefreshTokens, and Comments using Prisma ORM with flexible database switching.',
-            'Implemented full real-time collaboration with instant Kanban board CRUD state syncing across multi-user sessions.',
-            'Integrated client-side state machine using React Context API for secure session persistence.',
-            'Created responsive paginated listings and category filters for efficient data transfer.'
+            'Engineered dynamic database relationships supporting cascade delete rules and composite unique constraints for Likes and Bookmarks.',
+            'Implemented secure multi-role authorization (Admin dashboard for blocking users/moderation; User dashboard for publishing).',
+            'Integrated multiple-image uploads per article linked dynamically via relational tables.',
+            'Built responsive client UI featuring custom filters for match phases, article categories, and interactive user feeds.',
+            'Successfully containerized/structured codebase for deployment.'
         ],
-        github: 'https://github.com/Daikigoestoearth/wad-capstone'
+        github: 'https://github.com/Umar1hamzah/GoalPost_Uas_Wadv.git'
     },
     'recipe-app': {
         title: 'Aplikasi Buku Masak (Recipe App)',
