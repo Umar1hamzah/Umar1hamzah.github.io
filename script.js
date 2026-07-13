@@ -203,67 +203,10 @@ function closeProjectModal() {
     document.body.style.overflow = 'auto'; // Restore scroll
 }
 
-/* ==========================================
-   CERTIFICATION MODAL POPUP SYSTEM
-   ========================================== */
-const certModal = document.getElementById('cert-modal');
-const certTitle = document.getElementById('cert-modal-title');
-const certDesc = document.getElementById('cert-modal-desc');
-const certPath = document.getElementById('cert-modal-path');
-
-const certDetails = {
-    'cert-rightjet': {
-        title: 'Appreciation Cert: IoT Developer Intern',
-        desc: 'Issued by PT Global Inovasi Terdepan (RightJet) in November 2025. Awarded for developing the offline, mesh-networked ESP32 coordinates broadcaster for Umrah and Hajj pilgrim coordination.',
-        file: 'cert_rightjet.png'
-    },
-    'cert-gemastik': {
-        title: 'National Finalist - Gemastik XVIII',
-        desc: 'Issued by the Indonesian Ministry of Education, Culture, Research, and Technology x Universitas Telkom in October 2025. Awarded for entering the finals of the national Smart Devices competition category.',
-        file: 'cert_gemastik.png'
-    },
-    'cert-bnsp': {
-        title: 'Competence Certificate: Junior Coder',
-        desc: 'Issued by BNSP (Indonesian Professional Certification Authority) in May 2024. Demonstrates competency in Software & Game Development (Junior Coder occupation).',
-        file: 'cert_bnsp.png'
-    },
-    'cert-complaint': {
-        title: 'Vocational Competency: Web-Based School Complaint App',
-        desc: 'Issued by SMK Telkom Jakarta in June 2024. Recognizes a score of 89/100 (Highly Competent) for designing and developing a school ticketing app in PHP, MySQL, and Bootstrap.',
-        file: 'cert_school_complaint.png'
-    }
-};
-
-function openCertModal(certId) {
-    const data = certDetails[certId];
-    if (!data) return;
-
-    certTitle.textContent = data.title;
-    certDesc.textContent = data.desc;
-    certPath.textContent = `assets/${data.file}`;
-
-    // Set Google Drive folder link
-    const certLink = document.getElementById('cert-modal-link');
-    if (certLink) {
-        certLink.href = 'https://drive.google.com/drive/folders/1mRL4IKokIdltKHb-Onp90WhFdCtlGs7T?usp=drive_link';
-    }
-
-    certModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeCertModal() {
-    certModal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
 // Close modals when clicking outside contents
 window.addEventListener('click', (e) => {
     if (e.target === projectModal) {
         closeProjectModal();
-    }
-    if (e.target === certModal) {
-        closeCertModal();
     }
 });
 
