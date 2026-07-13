@@ -1,0 +1,7 @@
+Taruh foto profil, tangkapan layar proyek, dan sertifikat kamu di folder assets ini.
+
+Rekomendasi nama file sesuai kode program:
+1. CV/Sertifikat RightJet: cert_rightjet.png
+2. Sertifikat Gemastik: cert_gemastik.png
+3. Sertifikat BNSP: cert_bnsp.png
+4. Sertifikat SMK (Aplikasi Pengaduan): cert_school_complaint.png
