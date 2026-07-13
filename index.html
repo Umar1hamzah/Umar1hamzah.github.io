@@ -352,18 +352,18 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form id="contact-form" class="contact-form">
+                    <form id="contact-form" class="contact-form" action="https://formsubmit.co/hmzhumar@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" required placeholder="Your Name">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required placeholder="your.email@example.com">
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5" required placeholder="Let's talk about a project..."></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="Let's talk about a project..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
                     </form>
@@ -395,10 +395,15 @@
             <span class="modal-close" onclick="closeCertModal()">&times;</span>
             <div class="cert-modal-body">
                 <h3 id="cert-modal-title">Certificate</h3>
-                <p id="cert-modal-desc"></p>
+                <p id="cert-modal-desc" style="margin-bottom: 20px;"></p>
+                <div style="margin-bottom: 24px; display: flex; justify-content: center;">
+                    <a id="cert-modal-link" href="#" target="_blank" class="btn btn-primary" style="width: 100%;">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View on Google Drive
+                    </a>
+                </div>
                 <div class="cert-placeholder">
                     <i class="fa-solid fa-file-image"></i>
-                    <p>Place your certificate image at: <br><code id="cert-modal-path">assets/cert_name.png</code></p>
+                    <p>Or place your local image at: <br><code id="cert-modal-path">assets/cert_name.png</code></p>
                 </div>
             </div>
         </div>

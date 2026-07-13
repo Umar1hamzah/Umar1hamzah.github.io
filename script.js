@@ -242,6 +242,12 @@ function openCertModal(certId) {
     certDesc.textContent = data.desc;
     certPath.textContent = `assets/${data.file}`;
 
+    // Set Google Drive folder link
+    const certLink = document.getElementById('cert-modal-link');
+    if (certLink) {
+        certLink.href = 'https://drive.google.com/drive/folders/1mRL4IKokIdltKHb-Onp90WhFdCtlGs7T?usp=drive_link';
+    }
+
     certModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 }
@@ -273,12 +279,25 @@ contactForm.addEventListener('submit', (e) => {
     const msgVal = document.getElementById('message').value;
 
     if (nameVal && emailVal && msgVal) {
-        // Visual success effect
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
         
-        setTimeout(() => {
+        // Submit via FormSubmit AJAX API
+        fetch("https://formsubmit.co/ajax/hmzhumar@gmail.com", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: nameVal,
+                email: emailVal,
+                message: msgVal
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
             submitBtn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
             submitBtn.innerHTML = 'Message Sent! <i class="fa-solid fa-circle-check"></i>';
             contactForm.reset();
@@ -288,7 +307,17 @@ contactForm.addEventListener('submit', (e) => {
                 submitBtn.style.background = '';
                 submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
             }, 3000);
-        }, 1500);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            submitBtn.style.background = 'linear-gradient(135deg, #EF4444, #DC2626)';
+            submitBtn.innerHTML = 'Error Sending <i class="fa-solid fa-circle-xmark"></i>';
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.style.background = '';
+                submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+            }, 3000);
+        });
     }
 });
 
