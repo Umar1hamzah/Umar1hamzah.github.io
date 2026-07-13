@@ -1,0 +1,93 @@
+
+--- Page 1 ---
+UMAR HAMZAH
+hmzhumar@gmail.com  |  089518065450  |  South Jakarta, DKI Jakarta  |  linkedin.com/in/umar-hamzah-si
+PROFILE SUMMARY
+First-batch Information Systems student at Universitas Cakrawala with a strong technical foundation in Software 
+Engineering from SMK Telkom Jakarta. Experienced in IoT development, robotics education, and full-stack 
+software development across web and mobile platforms. Participated in Gemastik XVIII 2025 (Smart Devices 
+category), developing a machine learning-powered pilgrim coordination system. Skilled in mobile development 
+(Flutter), web development (React, Node.js, Express), database ORM (Prisma), embedded systems, and AI-
+based anomaly detection. A collaborative team player with strong problem-solving skills and a passion for 
+engineering impactful solutions.
+EDUCATION
+B.Sc. Information Systems — Universitas Cakrawala (Founding Batch) 2024 – Present
+• Gemastik XVIII 2025 Finalist — national competition in Smart Devices category, organized by Ministry of 
+Education x Universitas Telkom.
+• Actively building cross-subject projects spanning mobile development, full-stack web, IoT, and AI domains.
+Vocational High School — Software Engineering — SMK Telkom Jakarta July 2021 – June 2024
+INTERNSHIP EXPERIENCE
+IoT Developer Intern  |  PT Global Inovasi Terdepan (RightJet) 2025
+• Developed an internet-free offline communication system using ESP32 as a coordinator device for Umrah 
+and Hajj pilgrims.
+• Designed an ESP32-based primary channel connecting directly to pilgrims' smartphones, replacing 
+conventional communication tools in hardware-constrained environments.
+• Applied embedded systems and wireless communication concepts to optimize signal transmission reliability.
+Assistant Teacher — Robotics Education  |  PT Sari Teknologi July 2023 – December 2023
+• Assisted robotics learning sessions across 4 schools, from elementary to junior high school levels.
+• Designed and prepared customized teaching materials tailored to student competency assessments.
+• Developed IoT competency through a collaborative group project focused on IoT-based smart automation 
+systems.
+PROJECT EXPERIENCE
+GOALPOST — Community-Based Football Portal & Match Tracker Semester 3, 2025
+Web Application Development 2 (UAS)  |  Stack: React (Vite), Node.js, Express, Prisma ORM, PostgreSQL, JWT 
+Authentication, CSS
+• Developed a full-stack community-driven football portal and article hub for football enthusiasts.
+• Built interactive community features: publish articles, upload multiple images, comment, like, and save 
+bookmarks.
+• Implemented multi-role access control (Admin / User) with JWT authentication and secure password hashing.
+• Designed relational database schema in Prisma ORM with composite primary keys for Likes and Bookmarks, 
+and cascade deletion rules.
+• Engineered a match-tracking and scheduler dashboard to record tournament phases — World Cup scores, 
+cards, and team statistics.
+Aplikasi Buku Masak (Recipe App) — Multi-User Mobile App Semester 3, 2025
+Mobile Computing (UAS)  |  Stack: Flutter (Dart), Provider, Hive (NoSQL), TheMealDB API, Image Picker
+• Built a multi-user recipe catalog mobile app with data isolation per user account and persistent auto-login 
+session.
+• Integrated TheMealDB API for real-time online recipe search and local import functionality.
+• Developed custom recipe creation with device camera integration and local Base64 image storage.
+• Built key features: real-time search, favorite list, smart shopping list, and Admin Mode for central data 
+management.
+
+--- Page 2 ---
+Sistem Koordinasi Jamaah Adaptif — Gemastik XVIII 2025 (Smart Devices) October 2025
+Universitas Cakrawala — National Competition  |  Stack: ESP32-WROOM-32, GPS NEO-8M, ESP-NOW Mesh, 
+DBSCAN, One-Class SVM, MapLibre, Arduino IDE
+• Designed a hybrid dual-mode IoT platform for pilgrim coordination — offline via ESP-NOW mesh and online 
+via cloud sync.
+• Implemented two-layer anomaly detection (DBSCAN + One-Class SVM) achieving 94% accuracy and only 
+6% false alarm rate.
+• Built key features: offline real-time map, SOS emergency trigger, Push-to-Talk voice, and digital Tawaf & Sai 
+counter.
+TrakPoint — Smart Fleet Monitoring System Semester 2, 2024
+Web Client Development | UX Design | Database  |  Stack: PHP, HTML, CSS, MySQL, Node.js, WebSocket, Mosquitto 
+(MQTT), ESP-32, GPS NEO-6M, Figma
+• Developed a web-based truck fleet monitoring system with real-time GPS tracking, overspeed alarms, idle 
+detection, and trip history.
+• Managed database design (MySQL) and IoT hardware integration (ESP-32, GPS NEO-6M, SIM800L) for 
+location tracking.
+• Designed UI/UX in Figma and implemented a multi-role user system (Admin / Operator / Driver).
+TransportKu — Smart City Transportation Assistant Semester 3, 2025
+Information Systems Concept  |  Stack: Figma, Use Case Diagram, BPMN, Activity Diagram
+• Conceptualized an integrated city transportation platform combining train/bus ticketing and ride-hailing 
+services.
+• Produced full system design documentation and designed 30+ responsive UI/UX screens in Figma.
+TECHNICAL SKILLS
+Programming Languages: HTML, CSS, PHP, JavaScript (ES6+), Dart, C++, SQL
+Frameworks & Libraries: Flutter, React, Node.js, Express, Prisma ORM, JWT
+Databases: MySQL, PostgreSQL, Hive (NoSQL), SQLite
+Hardware & IoT: ESP-32, ESP-NOW Mesh, GPS NEO-6M/NEO-8M, SIM800L, RFID, Arduino IDE
+Tools & Software: Git, GitHub, Figma, VS Code, Mosquitto (MQTT), WebSocket, MapLibre, Tableau, Canva
+CERTIFICATIONS
+Certificate of Appreciation — IoT Developer Intern  |  PT Global Inovasi Terdepan (RightJet)  |  November 
+2025
+Certificate of Participation — Gemastik XVIII (Smart Devices)  |  Ministry of Education x Universitas Telkom  |  
+October 2025
+Certificate of Competence — Junior Coder  |  BNSP (Indonesian Professional Certification Authority)  |  May 
+2024
+Vocational Competency Certificate — Web School Complaint App  |  SMK Telkom Jakarta  |  Score: 89/100  | 
+June 2024
+Vocational Competency Certificate — RFID on Delivery Robot  |  SMK Telkom Jakarta  |  Score: 90/100  |  
+January 2024
+LANGUAGES
+Indonesian  —  Native     English  —  Intermediate  |  TOEIC Score: 415/990  |  ETS, September 2023
