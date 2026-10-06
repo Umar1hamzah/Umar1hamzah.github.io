@@ -65,6 +65,21 @@ const projectsData = {
             'Created three user roles (Admin / Operator / Driver) with restricted authorization dashboards and trip history logs.'
         ],
         github: 'https://github.com/Umar1hamzah/MobileComputing'
+    },
+    'climate-viz': {
+        title: 'Climate Change Analytics Dashboard',
+        tag: 'Data Visualization Project (Tableau)',
+        category: 'Data Analytics & Visualization',
+        stack: ['Tableau', 'Excel / CSV', 'Data Pre-processing', 'Dashboard Design'],
+        desc: 'An interactive data visualization dashboard built with Tableau to analyze and present global climate change trends, comparisons, and hidden patterns from raw datasets.',
+        problem: 'Raw climate data is often too complex for general audiences to understand without visual aid, making it difficult to extract actionable insights or observe long-term environmental trends.',
+        solution: 'Collaborated in a team to process and visualize climate change datasets. As a Data Preparation & Dashboard Designer, I cleaned raw data using Excel/CSV tools and engineered an interactive Tableau dashboard. The dashboard features dynamic filters and intuitive UI designs to help users explore data interactively.',
+        achievements: [
+            'Designed an intuitive Tableau dashboard that transforms complex raw data into easily readable charts and graphs.',
+            'Implemented interactive filters allowing users to drill down into specific trends and hidden patterns dynamically.',
+            'Successfully collaborated in a 3-person team, bridging data preparation logic with final dashboard visual design.'
+        ],
+        github: 'https://github.com/Nitadyn/Analysis_Climate-Change-2026.git'
     }
 };
 
