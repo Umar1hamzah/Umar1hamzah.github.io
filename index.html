@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body class="dark-theme">
+
+    <!-- Interactive Background Glow -->
+    <div id="cursor-glow"></div>
 
     <!-- Header / Navigation -->
     <nav class="navbar">
@@ -82,6 +85,7 @@
                             <p class="indent-1"><span class="c-prop">education</span>: <span class="c-string">"B.Sc. Information Systems"</span>,</p>
                             <p class="indent-1"><span class="c-prop">hardware</span>: [<span class="c-val">"ESP32"</span>, <span class="c-val">"ESP-NOW Mesh"</span>, <span class="c-val">"GPS Modules"</span>],</p>
                             <p class="indent-1"><span class="c-prop">software</span>: [<span class="c-val">"Flutter"</span>, <span class="c-val">"React"</span>, <span class="c-val">"Node.js"</span>, <span class="c-val">"Prisma"</span>],</p>
+                            <p class="indent-1"><span class="c-prop">design</span>: [<span class="c-val">"Figma"</span>, <span class="c-val">"UI/UX"</span>, <span class="c-val">"Prototyping"</span>],</p>
                             <p class="indent-1"><span class="c-prop">passion</span>: <span class="c-string">"Building impactful end-to-end tech"</span></p>
                             <p>};</p>
                             <br>
@@ -159,13 +163,26 @@
                     </div>
 
                     <div class="skills-category">
+                        <h4><i class="fa-solid fa-pen-nib"></i> UI/UX &amp; Product Design</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Wireframing</span>
+                            <span class="skill-tag">Interactive Prototyping</span>
+                            <span class="skill-tag">Design Systems</span>
+                            <span class="skill-tag">User Flow &amp; BPMN</span>
+                            <span class="skill-tag">Responsive UI</span>
+                            <span class="skill-tag">Canva</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
                         <h4><i class="fa-solid fa-database"></i> Databases &amp; Tools</h4>
                         <div class="skills-tags">
                             <span class="skill-tag">PostgreSQL</span>
                             <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">Hive (NoSQL)</span>
+                            <span class="skill-tag">Tableau</span>
                             <span class="skill-tag">Git / GitHub</span>
-                            <span class="skill-tag">Figma</span>
                             <span class="skill-tag">MapLibre</span>
                             <span class="skill-tag">VS Code</span>
                         </div>
@@ -187,6 +204,7 @@
                 <button class="filter-btn" data-filter="iot">IoT &amp; Hardware</button>
                 <button class="filter-btn" data-filter="web">Web Apps</button>
                 <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
                 <button class="filter-btn" data-filter="data">Data &amp; Analytics</button>
             </div>
 
@@ -407,6 +425,6 @@
 
 
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

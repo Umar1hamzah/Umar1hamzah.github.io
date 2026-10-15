@@ -183,26 +183,30 @@ function openProjectModal(projectId) {
     modalBody.innerHTML = `
         <h2 class="m-title">${data.title}</h2>
         <span class="m-tag">${data.tag}</span>
-        
         <p class="m-desc">${data.desc}</p>
         
-        <h3 class="m-bullets-title"><i class="fa-solid fa-circle-info"></i> Context &amp; Problem</h3>
-        <p class="m-desc" style="font-size: 0.95rem; margin-bottom: 20px;">${data.problem}</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+            <div>
+                <h3 class="m-bullets-title" style="margin-bottom: 8px;"><i class="fa-solid fa-circle-info"></i> Context &amp; Problem</h3>
+                <p class="m-desc" style="font-size: 0.9rem; margin-bottom: 0;">${data.problem}</p>
+            </div>
+            <div>
+                <h3 class="m-bullets-title" style="margin-bottom: 8px;"><i class="fa-solid fa-gears"></i> Solution &amp; Architecture</h3>
+                <p class="m-desc" style="font-size: 0.9rem; margin-bottom: 0;">${data.solution}</p>
+            </div>
+        </div>
         
-        <h3 class="m-bullets-title"><i class="fa-solid fa-gears"></i> Solution &amp; Architecture</h3>
-        <p class="m-desc" style="font-size: 0.95rem; margin-bottom: 24px;">${data.solution}</p>
-        
-        <h3 class="m-bullets-title"><i class="fa-solid fa-trophy"></i> Key Achievements</h3>
-        <ul class="m-bullets">
+        <h3 class="m-bullets-title" style="margin-bottom: 8px;"><i class="fa-solid fa-trophy"></i> Key Achievements</h3>
+        <ul class="m-bullets" style="margin-bottom: 15px;">
             ${bulletsHTML}
         </ul>
 
-        <h3 class="m-bullets-title"><i class="fa-solid fa-layer-group"></i> Tech Stack</h3>
-        <div class="m-stack">
+        <h3 class="m-bullets-title" style="margin-bottom: 8px;"><i class="fa-solid fa-layer-group"></i> Tech Stack</h3>
+        <div class="m-stack" style="margin: 0 0 20px 0;">
             ${stackHTML}
         </div>
 
-        <div class="m-footer">
+        <div class="m-footer" style="padding-top: 15px; border-top: 1px solid var(--border-color);">
             <a href="${data.github}" target="_blank" class="btn btn-primary">
                 <i class="fa-brands fa-github"></i> View on GitHub
             </a>
@@ -210,7 +214,7 @@ function openProjectModal(projectId) {
         </div>
     `;
 
-    projectModal.style.display = 'block';
+    projectModal.style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Lock background scroll
 }
 
@@ -305,3 +309,70 @@ mobileMenuBtn.addEventListener('click', () => {
         icon.classList.replace('fa-bars', 'fa-xmark');
     }
 });
+
+/* ==========================================
+   INTERACTIVE CURSOR GLOW EFFECT
+   ========================================== */
+const cursorGlow = document.getElementById('cursor-glow');
+
+if (cursorGlow) {
+    document.addEventListener('mousemove', (e) => {
+        // Use requestAnimationFrame for smooth performance
+        requestAnimationFrame(() => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+    });
+
+    // Make the glow bigger when clicking
+    document.addEventListener('mousedown', () => {
+        cursorGlow.style.width = '800px';
+        cursorGlow.style.height = '800px';
+    });
+    
+    document.addEventListener('mouseup', () => {
+        cursorGlow.style.width = '600px';
+        cursorGlow.style.height = '600px';
+    });
+}
+
+/* ==========================================
+   SCROLL REVEAL ANIMATIONS (CLEAN THEME)
+   ========================================== */
+// Add a CSS class dynamically for elements to hide initially
+const style = document.createElement('style');
+style.innerHTML = `
+    .reveal-element {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    }
+    .reveal-element.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+document.head.appendChild(style);
+
+// Select elements to animate
+const revealElements = document.querySelectorAll('.section-title, .section-subtitle, .project-card, .timeline-item, .cert-card, .skills-category');
+
+revealElements.forEach(el => {
+    el.classList.add('reveal-element');
+});
+
+// Use IntersectionObserver
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target); // Animate only once
+        }
+    });
+}, {
+    root: null,
+    threshold: 0.1, // Trigger when 10% visible
+    rootMargin: "0px 0px -50px 0px"
+});
+
+revealElements.forEach(el => revealObserver.observe(el));
