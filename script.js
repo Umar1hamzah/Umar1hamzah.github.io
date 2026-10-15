@@ -20,7 +20,7 @@ const projectsData = {
     },
     'goalpost': {
         title: 'GOALPOST',
-        tag: 'UAS Web Advance Development 2',
+        tag: 'UAS Web Advance Development 2 (Semester 4, 2025)',
         category: 'Full-Stack Web (Community)',
         stack: ['React (Vite)', 'Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'JWT Authentication', 'CSS'],
         desc: 'A full-stack community-driven football portal and news hub. It supports article creation, multi-image uploads, interactive commenting, liking, bookmarking, and tournament match tracking.',
@@ -37,7 +37,7 @@ const projectsData = {
     },
     'recipe-app': {
         title: 'Aplikasi Buku Masak (Recipe App)',
-        tag: 'UAS Mobile Computing',
+        tag: 'UAS Mobile Computing (Semester 4, 2025)',
         category: 'Mobile (Flutter)',
         stack: ['Flutter (Dart)', 'Provider (State)', 'Hive NoSQL', 'Http package', 'Image Picker', 'Path Provider', 'TheMealDB API'],
         desc: 'A mobile cookbook application featuring advanced search logic, isolated multi-user storage, device camera integration, and REST client imports.',
@@ -80,6 +80,21 @@ const projectsData = {
             'Successfully collaborated in a 3-person team, bridging data preparation logic with final dashboard visual design.'
         ],
         github: 'https://github.com/Nitadyn/Analysis_Climate-Change-2026.git'
+    },
+    'transportku': {
+        title: 'TransportKu – Smart City Transportation Assistant',
+        tag: 'Information Systems Concept (Semester 3, 2025)',
+        category: 'UI/UX & System Design',
+        stack: ['Figma', 'UI/UX Design', 'Wireframing', 'Interactive Prototyping', 'Use Case Diagram', 'BPMN', 'Activity Diagram'],
+        desc: 'A smart city multi-modal transit platform conceptualized to unify bus and train ticketing with on-demand ride-hailing services into a single accessible mobile and web interface.',
+        problem: 'Metropolitan commuters frequently suffer from fragmented public transit systems, having to switch between multiple separate apps for schedules, ticketing, and first/last-mile ride-hailing.',
+        solution: 'I conceptualized a unified digital transportation hub. I produced comprehensive software design specifications, modeling core business processes and user interactions with BPMN and Use Case diagrams, and crafted 30+ responsive, accessible UI/UX screens in Figma for both mobile and web.',
+        achievements: [
+            'Designed 30+ responsive UI/UX screens in Figma covering end-to-end user journeys from route planning to instant QR e-ticketing.',
+            'Modeled complete Information Architecture and system workflows using BPMN and Activity Diagrams to optimize transit transitions.',
+            'Built an interactive design system and component library with consistent typography, color schemes, and touch targets.'
+        ],
+        github: 'https://github.com/Umar1hamzah'
     }
 };
 
